@@ -848,7 +848,7 @@ input[type="password"] {
   height: 100%;
   position: fixed;
   z-index: 7100;
-  background: #ffffff;
+  background: #f8f8f7;
   top: 0;
   left: 0;
   right: 0;
@@ -861,7 +861,7 @@ input[type="password"] {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);  }
 
 .service.no-shadow.link {
   -webkit-box-shadow: none !important;
