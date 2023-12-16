@@ -859,7 +859,7 @@ input[type="password"] {
   width: 100%;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 45%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
