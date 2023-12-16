@@ -856,12 +856,13 @@ input[type="password"] {
 
 .loader {
   z-index: 7700;
-  position: fixed;
+  width: 100%;
+  position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);  }
+}
 
 .service.no-shadow.link {
   -webkit-box-shadow: none !important;
