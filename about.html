@@ -113,7 +113,7 @@
               <li ><a href="index.html">Inicio</a></li>
               <li><a href="single.html">Acerca de mí</a></li>
               <li>
-                <a href="#">Podcast</a>
+                <a href="podcast.html">Podcast</a>
                 
               </li>
               <li class="active"><a href="about.html">Servicios</a></li>
@@ -134,8 +134,10 @@
 
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-lg-12 text-center">
-            <h1 class="text-black mb-0">Servicios</h1>
+          <div class="col-lg-12 text-center" >
+            <div style="justify-content: center;
+            align-items: center;
+            text-align: center;" class="loading">SERVICIOS</div>
           </div>
         </div>
       </div>
@@ -348,7 +350,40 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/custom.js"></script>
+    <style>
+      .loading {
+      display: flex;
+      color: #e79cb4;
+      font-size: 1em;
+      text-transform: uppercase;
 
+      span {
+          padding: 0 10px;
+          line-height: 100px;
+          background: #ffffff;
+          animation: bulge 2s infinite;
+      }
+      }
+
+      @keyframes bulge {
+      50% {
+          box-shadow: 0 20px 0 #eee;
+          transform: translateY(-35px);
+      }
+      }
+  </style>
+  <script>
+      let loading = document.querySelector(".loading");
+      let letters = loading.textContent.split("");
+      loading.textContent = "";
+      letters.forEach((letter, i) => {
+      let span = document.createElement("span");
+      span.textContent = letter;
+      span.style.animationDelay = `${i / 5}s`;
+      loading.append(span);
+      });
+
+    </script>
     
   </body>
   </html>
