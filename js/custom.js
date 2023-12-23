@@ -8,8 +8,8 @@ $(function(){
 
 	'use strict';
 
-	$(".loader").delay(5000).fadeOut(400);
-	$("#overlayer").delay(5000).fadeOut(400);	
+	$(".loader").delay(3000).fadeOut(200);
+	$("#overlayer").delay(3000).fadeOut(200);	
 
 	var siteMenuClone = function() {
 
